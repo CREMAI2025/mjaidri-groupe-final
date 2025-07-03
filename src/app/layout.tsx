@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, Poppins, Playfair_Display } from 'next/font/google'
 import './globals.css'
-import { Header } from '@/components/layout/header'
+import { EnhancedHeader } from '@/components/layout/enhanced-header'
 import { Footer } from '@/components/layout/footer'
 
 const inter = Inter({ 
@@ -25,19 +25,19 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Groupe Majaidri | Maîtres de l\'Art Immobilier Marocain | Luxe & Excellence depuis 1997',
+    default: 'Groupe Majaidri | Gardiens de l\'Art Immobilier Marocain | Luxe & Excellence depuis 1997',
     template: '%s | Groupe Majaidri'
   },
-  description: 'Découvrez l\'art immobilier marocain avec Groupe Majaidri : SOLUNA Casablanca (or & bleu nuit), EL BARAKAH Guelmim (terre & oasis), CITTÀ VERDE Benslimane (émeraude & nacré). Excellence architecturale, innovation éco-luxe, service conciergerie. Depuis 1997.',
+  description: 'Découvrez l\'art immobilier marocain avec Groupe Majaidri : SOLUNA (or & bleu nuit), EL BARAKAH (terre & oasis), CITTÀ VERDE (émeraude & nacré). Excellence architecturale, innovation éco-luxe, service conciergerie. Depuis 1997.',
   keywords: [
-    'groupe majaidri',
-    'immobilier luxe maroc',
-    'soluna casablanca',
-    'el barakah guelmim',
-    'citta verde benslimane',
-    'promoteur immobilier maroc',
-    'appartements luxe casablanca',
-    'investissement immobilier maroc'
+    'groupe majaidri gardiens art immobilier marocain',
+    'soluna luxe contemporain',
+    'el barakah familial premium', 
+    'città verde éco-luxe',
+    'excellence immobilière maroc',
+    'tradition innovation',
+    'casablanca benslimane mohammedia',
+    'investissement immobilier luxe'
   ],
   authors: [{ name: 'Groupe Majaidri' }],
   creator: 'Groupe Majaidri',
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     locale: 'fr_MA',
     url: 'https://groupemajaidri.ma',
     siteName: 'Groupe Majaidri',
-    title: 'Groupe Majaidri | Maîtres de l\'Art Immobilier Marocain',
+    title: 'Groupe Majaidri | Gardiens de l\'Art Immobilier Marocain',
     description: 'Excellence immobilière depuis 1997. SOLUNA, EL BARAKAH, CITTÀ VERDE - Trois univers d\'exception.',
     images: [
       {
@@ -97,7 +97,7 @@ export default function RootLayout({
   return (
     <html lang="fr" className={`${inter.variable} ${poppins.variable} ${playfair.variable}`}>
       <body className="font-primary antialiased">
-        <Header />
+        <EnhancedHeader />
         <main className="min-h-screen">
           {children}
         </main>
