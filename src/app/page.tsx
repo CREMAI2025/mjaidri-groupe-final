@@ -1,5 +1,5 @@
 import { EnhancedHeroSection } from '@/components/sections/enhanced-hero-section'
-import { ProjectsSection } from '@/components/sections/projects-section'
+import { ProjectsOverviewSection } from '@/components/sections/projects-overview-section'
 import { StatsSection } from '@/components/sections/stats-section'
 import { TestimonialsSection } from '@/components/sections/testimonials-section'
 import { NewsSection } from '@/components/sections/news-section'
@@ -9,7 +9,7 @@ export default function HomePage() {
   return (
     <>
       <EnhancedHeroSection />
-      <ProjectsSection />
+      <ProjectsOverviewSection />
       <StatsSection />
       <TestimonialsSection />
       <NewsSection />
